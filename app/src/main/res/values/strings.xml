@@ -1,0 +1,76 @@
+
+<resources>
+    <string name="app_name">ProjectPrototype</string>
+    <string name="Program"><u>Program</u></string>
+    <string name="Price"><u>Price</u></string>
+    <string name="title"><u>Registering for an Event</u></string>
+    <string name="program">Program:</string>
+    <string name="type">Type:</string>
+    <string name="date">Date:</string>
+    <string name="time">Time:</string>
+    <string name="location">Location:</string>
+    <string name="selectDate">Select Date</string>
+    <string name="price">$0.00</string>
+    <string name="register">Register</string>
+
+    <string name="events"><u>Events</u></string>
+    <string name="cost">Price:</string>
+    <string name="totalCost">Total Price:</string>
+    <string name="proceed">Add More Events</string>
+    <string name="checkout">Checkout</string>
+
+    <string-array name="programs">
+        <item>Select Program</item>
+        <item>Sports/Fitness</item>
+        <item>Music</item>
+        <item>Fairs</item>
+    </string-array>
+    <string-array name="info">
+        <item></item>
+    </string-array>
+
+    <string-array name="sports">
+        <item>Select Type</item>
+        <item>Basketball</item>
+        <item>Swimming</item>
+        <item>Tennis</item>
+        <item>Yoga</item>
+        <item>Volleyball</item>
+    </string-array>
+
+    <string-array name="music">
+        <item>Select Type</item>
+        <item>Concert</item>
+        <item>Lesson</item>
+    </string-array>
+
+    <string-array name="fairs">
+        <item>Select Type</item>
+        <item>Craft</item>
+        <item>Book</item>
+        <item>Career</item>
+    </string-array>
+
+    <string-array name="times">
+        <item>Select Time</item>
+        <item>8:00</item>
+        <item>9:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>1:00</item>
+        <item>2:00</item>
+        <item>3:00</item>
+        <item>4:00</item>
+    </string-array>
+
+    <string-array name="locations">
+        <item>Select Location</item>
+        <item>Kelowna Rec Centre</item>
+        <item>Kelowna YMCA</item>
+        <item>Vernon Rec Centre</item>
+    </string-array>
+
+    </resources>
+
+

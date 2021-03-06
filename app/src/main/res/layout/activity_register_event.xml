@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterEvent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/program"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/program"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Spinner
+        android:id="@+id/enterProgram"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="@string/type"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/program"
+        app:layout_constraintLeft_toLeftOf="@id/program" />
+
+    <Spinner
+        android:id="@+id/enterType"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/enterProgram"
+        app:layout_constraintLeft_toLeftOf="@id/enterProgram" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="@string/location"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/type"
+        app:layout_constraintLeft_toLeftOf="@id/type" />
+
+    <Spinner
+        android:id="@+id/enterLocation"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/enterType"
+        app:layout_constraintLeft_toLeftOf="@id/enterType" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="@string/date"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/location"
+        app:layout_constraintLeft_toLeftOf="@id/location"/>
+
+    <Button
+        android:id="@+id/enterDate"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="@string/selectDate"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/enterLocation"
+        app:layout_constraintLeft_toLeftOf="@id/enterLocation" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="@string/time"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/date"
+        app:layout_constraintLeft_toLeftOf="@id/date" />
+
+    <Spinner
+        android:id="@+id/enterTime"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:inputType="textPersonName"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/enterDate"
+        app:layout_constraintLeft_toLeftOf="@id/enterProgram" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/events"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/type"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/date"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cost"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/time"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/totalCost"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/totalCost"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintRight_toLeftOf="@id/cost"
+        app:layout_constraintTop_toBottomOf="@id/cost" />
+
+    <TextView
+        android:id="@+id/finalCost"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="@id/cost"
+        app:layout_constraintTop_toBottomOf="@id/cost" />
+
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toLeftOf="@id/totalCost"
+        app:layout_constraintTop_toBottomOf="@id/totalCost" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/proceed"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/checkout"
+        app:layout_constraintTop_toBottomOf="@id/checkout" />
+
+
+
+</android.support.constraint.ConstraintLayout>
